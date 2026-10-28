@@ -162,22 +162,18 @@ ORDER BY rated_count DESC;
 
 **Metric caveats:** Show sample sizes with averages; exclude unrated restaurants from rating averages; do not directly compare costs in different currencies.
 
-## Suggested Repository Structure
+## Repository Structure
 
 ```text
 .
 ├── README.md
 ├── docker-compose.yml
 ├── sql/
-│   ├── staging/
-│   ├── silver/
-│   ├── gold/
-│   └── quality_checks/
-├── docs/
-│   ├── data_dictionary.md
-│   └── er_diagram.png
-└── dashboards/
-    └── screenshots/
+├── analysis/
+├── .gitignore
+├── .env
+└── data/
+    └── data.csv
 ```
 
 This is a suggested structure, not a claim that all files currently exist.
