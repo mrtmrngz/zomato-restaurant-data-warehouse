@@ -1,0 +1,23 @@
+﻿CREATE TABLE IF NOT EXISTS staging.raw_zomato(
+    restaurant_id INTEGER,
+    restaurant_name VARCHAR(55),
+    country_code INTEGER,
+    city VARCHAR(22),
+    address VARCHAR(132),
+    locality TEXT,
+    locality_verbose TEXT,
+    long VARCHAR(14),
+    lat VARCHAR(14),
+    cuisines TEXT,
+    avg_cost_for_two_currency NUMERIC,
+    currency VARCHAR(25),
+    has_table_booking VARCHAR(10),
+    has_online_delivery VARCHAR(10),
+    is_delivering_now VARCHAR(10),
+    switch_to_order_menu VARCHAR(10),
+    price_range INTEGER,
+    agg_rating NUMERIC(4, 2),
+    rating_color VARCHAR(15),
+    rating_text VARCHAR(15),
+    votes INTEGER
+);
